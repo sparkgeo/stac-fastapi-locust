@@ -11,6 +11,17 @@ Taurus and Locust load balancing for stac-fastapi
 ## Ingest test data
 ```$ make ingest```
 
+To ingest the sample STAC for Sentinel 2 imagery contained in this repo.
+
+Alternatively, to ingest a different STAC:
+
+```$ make ingest source=<source path>```
+
+Which can be one of:
+
+- A root `catalog.json` or `collection.json`. 
+- A compressed STAC. 
+
 ## Install
 ```$ pip install .```
 
